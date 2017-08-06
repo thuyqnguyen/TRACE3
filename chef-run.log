@@ -1,0 +1,392 @@
+thuys-mbp:vagrant_trace3 thuynguyen$ vagrant provision
+==> default: Loading Berkshelf datafile...
+==> default: Sharing cookbooks with VM
+==> default: Updating Vagrant's Berkshelf...
+==> default: Resolving cookbook dependencies...
+==> default: Fetching 'trace3' from source at .
+==> default: Fetching cookbook index from https://supermarket.chef.io...
+==> default: Using firewall (2.6.2)
+==> default: Using chef-sugar (3.4.0)
+==> default: Using trace3 (0.1.0) from source at .
+==> default: Vendoring chef-sugar (3.4.0) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/chef-sugar
+==> default: Vendoring firewall (2.6.2) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/firewall
+==> default: Vendoring trace3 (0.1.0) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/trace3
+==> default: Using hostname "myWindows2012r2" as node name for Chef...
+==> default: Running provisioner: chef_solo...
+==> default: Detected Chef (latest) is already installed
+==> default: Generating chef JSON and uploading...
+==> default: Running chef-solo...
+==> default: [2017-08-05T16:02:20-07:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca, C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163, C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a
+==> default:   One version per cookbook
+==> default: Starting Chef Client, version 13.2.20
+==> default: [2017-08-05T16:02:20-07:00] INFO: *** Chef 13.2.20 ***
+==> default: [2017-08-05T16:02:20-07:00] INFO: Platform: x64-mingw32
+==> default: [2017-08-05T16:02:20-07:00] INFO: Chef-client pid: 3872
+==> default: [2017-08-05T16:02:20-07:00] INFO: The plugin path C:\chef\ohai\plugins does not exist. Skipping...
+==> default: [2017-08-05T16:02:24-07:00] INFO: Setting the run_list to ["recipe[trace3::default]"] from CLI options
+==> default: [2017-08-05T16:02:24-07:00] INFO: Run List is [recipe[trace3::default]]
+==> default: [2017-08-05T16:02:24-07:00] INFO: Run List expands to [trace3::default]
+==> default: [2017-08-05T16:02:24-07:00] INFO: Starting Chef Run for myWindows2012r2
+==> default: [2017-08-05T16:02:24-07:00] INFO: Running start handlers
+==> default: [2017-08-05T16:02:24-07:00] INFO: Start handlers complete.
+==> default: resolving cookbooks for run list: ["trace3::default"]
+==> default: [2017-08-05T16:02:34-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:02:35-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:02:37-07:00] INFO: Loading cookbooks [trace3@0.1.0, windows@3.1.1, iis@6.7.2, firewall@2.6.2, ohai@5.1.0, chef-sugar@3.4.0]
+==> default: Synchronizing Cookbooks:
+==> default:   - trace3 (0.1.0)
+==> default:   - windows (3.1.1)
+==> default:   - iis (6.7.2)
+==> default:   - firewall (2.6.2)
+==> default:   - ohai (5.1.0)
+==> default:   - chef-sugar (3.4.0)
+==> default: Installing Cookbook Gems:
+==> default: Compiling Cookbooks...
+==> default:
+==> default: ================================================================================
+==> default: Recipe Compile Error in C:/chef/cache/cookbooks/trace3/recipes/default.rb
+==> default: ================================================================================
+==> default: NameError
+==> default: ---------
+==> default: undefined local variable or method `wsus' for cookbook: trace3, recipe: auto_update :Chef::Recipe
+==> default: Cookbook Trace:
+==> default: ---------------
+==> default:   C:/chef/cache/cookbooks/trace3/recipes/auto_update.rb:11:in `from_file'
+==> default:   C:/chef/cache/cookbooks/trace3/recipes/default.rb:10:in `from_file'
+==> default: Relevant File Content:
+==> default: ----------------------
+==> default: C:/chef/cache/cookbooks/trace3/recipes/auto_update.rb:
+==> default:
+==> default:   4:  #
+==> default:   5:  # Copyright (C) 2017 YOUR_NAME
+==> default:   6:  #
+==> default:   7:  # All rights reserved - Do Not Redistribute
+==> default:   8:  #
+==> default:   9:
+==> default:  10:  # auto update using wsus-client
+==> default:  11>> wsus-client::default
+==> default:  12:
+==> default: System Info:
+==> default: ------------
+==> default: chef_version=13.2.20
+==> default: platform=windows
+==> default: platform_version=6.3.9600
+==> default: ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x64-mingw32]
+==> default: program_name=C:/opscode/chef/bin/chef-solo
+==> default: executable=C:/opscode/chef/bin/chef-solo
+==> default:
+==> default: Running handlers:
+==> default: [2017-08-05T16:02:37-07:00] ERROR: Running exception handlers
+==> default: Running handlers complete
+==> default: [2017-08-05T16:02:37-07:00] ERROR: Exception handlers complete
+==> default: Chef Client failed. 0 resources updated in 17 seconds
+==> default: [2017-08-05T16:02:37-07:00] FATAL: Stacktrace dumped to C:/chef/cache/chef-stacktrace.out
+==> default: [2017-08-05T16:02:37-07:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+==> default: [2017-08-05T16:02:37-07:00] FATAL: NameError: undefined local variable or method `wsus' for cookbook: trace3, recipe: auto_update :Chef::Recipe
+Chef never successfully completed! Any errors should be visible in the
+output above. Please fix your recipes so that they properly complete.
+thuys-mbp:vagrant_trace3 thuynguyen$ vagrant provision
+==> default: Loading Berkshelf datafile...
+==> default: Sharing cookbooks with VM
+==> default: Updating Vagrant's Berkshelf...
+==> default: Resolving cookbook dependencies...
+==> default: Fetching 'trace3' from source at .
+==> default: Fetching cookbook index from https://supermarket.chef.io...
+==> default: Using chef-sugar (3.4.0)
+==> default: Using firewall (2.6.2)
+==> default: Using trace3 (0.1.0) from source at .
+==> default: Vendoring chef-sugar (3.4.0) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/chef-sugar
+==> default: Vendoring firewall (2.6.2) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/firewall
+==> default: Vendoring trace3 (0.1.0) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/trace3
+==> default: Using hostname "myWindows2012r2" as node name for Chef...
+==> default: Running provisioner: chef_solo...
+==> default: Detected Chef (latest) is already installed
+==> default: Generating chef JSON and uploading...
+==> default: Running chef-solo...
+==> default: [2017-08-05T16:08:57-07:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca, C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163, C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a
+==> default:   One version per cookbook
+==> default: Starting Chef Client, version 13.2.20
+==> default: [2017-08-05T16:08:57-07:00] INFO: *** Chef 13.2.20 ***
+==> default: [2017-08-05T16:08:57-07:00] INFO: Platform: x64-mingw32
+==> default: [2017-08-05T16:08:57-07:00] INFO: Chef-client pid: 2952
+==> default: [2017-08-05T16:08:57-07:00] INFO: The plugin path C:\chef\ohai\plugins does not exist. Skipping...
+==> default: [2017-08-05T16:09:01-07:00] INFO: Setting the run_list to ["recipe[trace3::default]"] from CLI options
+==> default: [2017-08-05T16:09:01-07:00] INFO: Run List is [recipe[trace3::default]]
+==> default: [2017-08-05T16:09:01-07:00] INFO: Run List expands to [trace3::default]
+==> default: [2017-08-05T16:09:01-07:00] INFO: Starting Chef Run for myWindows2012r2
+==> default: [2017-08-05T16:09:01-07:00] INFO: Running start handlers
+==> default: [2017-08-05T16:09:01-07:00] INFO: Start handlers complete.
+==> default: resolving cookbooks for run list: ["trace3::default"]
+==> default: [2017-08-05T16:09:12-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:09:13-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:09:14-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:09:14-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:09:14-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:09:15-07:00] INFO: Loading cookbooks [trace3@0.1.0, windows@3.1.1, iis@6.7.2, firewall@2.6.2, ohai@5.1.0, chef-sugar@3.4.0]
+==> default: Synchronizing Cookbooks:
+==> default: [2017-08-05T16:09:15-07:00] INFO: Storing updated cookbooks/trace3/recipes/auto_update.rb in the cache.
+==> default:   - trace3 (0.1.0)
+==> default:   - windows (3.1.1)
+==> default:   - iis (6.7.2)
+==> default:   - firewall (2.6.2)
+==> default:   - ohai (5.1.0)
+==> default:   - chef-sugar (3.4.0)
+==> default: Installing Cookbook Gems:
+==> default: Compiling Cookbooks...
+==> default: [2017-08-05T16:09:15-07:00] WARN: MissingCookbookDependency:
+==> default: Recipe `wsus-client::default` is not in the run_list, and cookbook 'wsus-client'
+==> default: is not a dependency of any cookbook in the run_list.  To load this recipe,
+==> default: first add a dependency on cookbook 'wsus-client' in the cookbook you're
+==> default: including it from in that cookbook's metadata.
+==> default:
+==> default: ================================================================================
+==> default: Recipe Compile Error in C:/chef/cache/cookbooks/trace3/recipes/default.rb
+==> default: ================================================================================
+==> default: Chef::Exceptions::CookbookNotFound
+==> default: ----------------------------------
+==> default: Cookbook wsus-client not found. If you're loading wsus-client from another cookbook, make sure you configure the dependency in your metadata
+==> default: Cookbook Trace:
+==> default: ---------------
+==> default:   C:/chef/cache/cookbooks/trace3/recipes/auto_update.rb:11:in `from_file'
+==> default:   C:/chef/cache/cookbooks/trace3/recipes/default.rb:10:in `from_file'
+==> default: Relevant File Content:
+==> default: ----------------------
+==> default: C:/chef/cache/cookbooks/trace3/recipes/auto_update.rb:
+==> default:
+==> default:   4:  #
+==> default:   5:  # Copyright (C) 2017 YOUR_NAME
+==> default:   6:  #
+==> default:   7:  # All rights reserved - Do Not Redistribute
+==> default:   8:  #
+==> default:   9:
+==> default:  10:  # auto update using wsus-client
+==> default:  11>> include_recipe 'wsus-client::default'
+==> default:  12:
+==> default: System Info:
+==> default: ------------
+==> default: chef_version=13.2.20
+==> default: platform=windows
+==> default: platform_version=6.3.9600
+==> default: ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x64-mingw32]
+==> default: program_name=C:/opscode/chef/bin/chef-solo
+==> default: executable=C:/opscode/chef/bin/chef-solo
+==> default:
+==> default: Running handlers:
+==> default: [2017-08-05T16:09:15-07:00] ERROR: Running exception handlers
+==> default: Running handlers complete
+==> default: [2017-08-05T16:09:15-07:00] ERROR: Exception handlers complete
+==> default: Chef Client failed. 0 resources updated in 18 seconds
+==> default: [2017-08-05T16:09:15-07:00] FATAL: Stacktrace dumped to C:/chef/cache/chef-stacktrace.out
+==> default: [2017-08-05T16:09:15-07:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+==> default: [2017-08-05T16:09:15-07:00] FATAL: Chef::Exceptions::CookbookNotFound: Cookbook wsus-client not found. If you're loading wsus-client from another cookbook, make sure you configure the dependency in your metadata
+Chef never successfully completed! Any errors should be visible in the
+output above. Please fix your recipes so that they properly complete.
+thuys-mbp:vagrant_trace3 thuynguyen$ vagrant provision
+==> default: Loading Berkshelf datafile...
+==> default: Sharing cookbooks with VM
+==> default: Updating Vagrant's Berkshelf...
+==> default: Resolving cookbook dependencies...
+==> default: Fetching 'trace3' from source at .
+==> default: Fetching cookbook index from https://supermarket.chef.io...
+==> default: Using chef-sugar (3.4.0)
+==> default: Installing wsus-client (1.2.1)
+==> default: Using firewall (2.6.2)
+==> default: Using trace3 (0.1.0) from source at .
+==> default: Vendoring chef-sugar (3.4.0) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/chef-sugar
+==> default: Vendoring firewall (2.6.2) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/firewall
+==> default: Vendoring trace3 (0.1.0) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/trace3
+==> default: Vendoring wsus-client (1.2.1) to /Users/thuynguyen/.berkshelf/vagrant-berkshelf/shelves/berkshelf20170805-3979-8zsoyj-default/wsus-client
+==> default: Using hostname "myWindows2012r2" as node name for Chef...
+==> default: Running provisioner: chef_solo...
+==> default: Detected Chef (latest) is already installed
+==> default: Generating chef JSON and uploading...
+==> default: Running chef-solo...
+==> default: [2017-08-05T16:10:59-07:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca, C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163, C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a
+==> default:   One version per cookbook
+==> default: Starting Chef Client, version 13.2.20
+==> default: [2017-08-05T16:10:59-07:00] INFO: *** Chef 13.2.20 ***
+==> default: [2017-08-05T16:10:59-07:00] INFO: Platform: x64-mingw32
+==> default: [2017-08-05T16:10:59-07:00] INFO: Chef-client pid: 3052
+==> default: [2017-08-05T16:10:59-07:00] INFO: The plugin path C:\chef\ohai\plugins does not exist. Skipping...
+==> default: [2017-08-05T16:11:03-07:00] INFO: Setting the run_list to ["recipe[trace3::default]"] from CLI options
+==> default: [2017-08-05T16:11:03-07:00] INFO: Run List is [recipe[trace3::default]]
+==> default: [2017-08-05T16:11:03-07:00] INFO: Run List expands to [trace3::default]
+==> default: [2017-08-05T16:11:03-07:00] INFO: Starting Chef Run for myWindows2012r2
+==> default: [2017-08-05T16:11:03-07:00] INFO: Running start handlers
+==> default: [2017-08-05T16:11:03-07:00] INFO: Start handlers complete.
+==> default: resolving cookbooks for run list: ["trace3::default"]
+==> default: [2017-08-05T16:11:13-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'wsus-client' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/wsus-client and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/wsus-client
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'wsus-client' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/wsus-client and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/wsus-client
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'wsus-client' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/wsus-client and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/wsus-client
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'wsus-client' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/wsus-client and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/wsus-client
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:11:14-07:00] WARN: Child with name 'wsus-client' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/wsus-client and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/wsus-client
+==> default: [2017-08-05T16:11:15-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:11:15-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:11:15-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:11:15-07:00] WARN: Child with name 'wsus-client' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/wsus-client and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/wsus-client
+==> default: [2017-08-05T16:11:15-07:00] WARN: Child with name 'trace3' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/trace3 and C:/vagrant-chef/52c766cbb13306f1aff9ec29322cd163/cookbooks/trace3
+==> default: [2017-08-05T16:11:15-07:00] WARN: Child with name 'chef-sugar' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/chef-sugar and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/chef-sugar
+==> default: [2017-08-05T16:11:15-07:00] WARN: Child with name 'firewall' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/firewall and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/firewall
+==> default: [2017-08-05T16:11:15-07:00] WARN: Child with name 'wsus-client' found in multiple directories: C:/vagrant-chef/a4df46c1c51c6a7e448a69625a8992ca/cookbooks/wsus-client and C:/vagrant-chef/6ec8740cbd1c4cf502d749736ddecf6a/cookbooks/wsus-client
+==> default: [2017-08-05T16:11:16-07:00] INFO: Loading cookbooks [trace3@0.1.0, wsus-client@1.2.1, windows@3.1.1, iis@6.7.2, firewall@2.6.2, ohai@5.1.0, chef-sugar@3.4.0]
+==> default: Synchronizing Cookbooks:
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/trace3/metadata.json in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/Gemfile.lock in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/Gemfile in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/Berksfile in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/chefignore in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/attributes/default.rb in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/libraries/helper.rb in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/libraries/matchers.rb in the cache.
+==> default:   [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/metadata.json in the cache.
+==> default: - trace3 (0.1.0)[2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/LICENSE in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/providers/update.rb in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/Rakefile in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/recipes/configure.rb in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/README.md in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/recipes/default.rb in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/recipes/update.rb in the cache.
+==> default: [2017-08-05T16:11:16-07:00] INFO: Storing updated cookbooks/wsus-client/resources/update.rb in the cache.
+==> default:   - wsus-client (1.2.1)
+==> default:   - windows (3.1.1)
+==> default:   - iis (6.7.2)
+==> default:   - firewall (2.6.2)
+==> default:   - ohai (5.1.0)
+==> default:   - chef-sugar (3.4.0)
+==> default: Installing Cookbook Gems:
+==> default: Compiling Cookbooks...
+==> default: Converging 12 resources
+==> default: Recipe: wsus-client::configure
+==> default:   * registry_key[HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate] action create
+==> default:     - create key HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate
+==> default:     - set value {:type=>:dword, :name=>"AcceptTrustedPublisherCerts", :data=>1}
+==> default:     - set value {:type=>:dword, :name=>"DisableWindowsUpdateAccess", :data=>0}
+==> default:     - set value {:type=>:dword, :name=>"ElevateNonAdmins", :data=>0}
+==> default:     - set value {:type=>:string, :name=>"TargetGroup", :data=>nil}
+==> default:     - set value {:type=>:dword, :name=>"TargetGroupEnabled", :data=>0}
+==> default:     - set value {:type=>:string, :name=>"WUServer", :data=>nil}
+==> default:     - set value {:type=>:string, :name=>"WUStatusServer", :data=>nil}
+==> default: [2017-08-05T16:11:17-07:00] INFO: registry_key[HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate] sending restart action to windows_service[wuauserv] (immediate)
+==> default:   * windows_service[wuauserv] action restart
+==> default: [2017-08-05T16:11:19-07:00] INFO: windows_service[wuauserv] restarted
+==> default:     - restart service windows_service[wuauserv]
+==> default: [2017-08-05T16:11:19-07:00] INFO: windows_service[wuauserv] sending run action to powershell_script[Force Windows update detection cycle] (immediate)
+==> default:   * powershell_script[Force Windows update detection cycle] action run
+==> default:     - execute "C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" -NoLogo -NonInteractive -NoProfile -ExecutionPolicy Bypass -InputFormat None -File "C:/Users/vagrant/AppData/Local/Temp/chef-script20170805-3052-7kq2v.ps1"
+==> default:   * registry_key[HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU] action create
+==> default:     - create key HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU
+==> default:     - set value {:type=>:dword, :name=>"AUOptions", :data=>1}
+==> default:     - set value {:type=>:dword, :name=>"AutoInstallMinorUpdates", :data=>0}
+==> default:     - set value {:type=>:dword, :name=>"DetectionFrequency", :data=>22}
+==> default:     - set value {:type=>:dword, :name=>"DetectionFrequencyEnabled", :data=>1}
+==> default:     - set value {:type=>:dword, :name=>"NoAutoRebootWithLoggedOnUsers", :data=>1}
+==> default:     - set value {:type=>:dword, :name=>"NoAutoUpdate", :data=>1}
+==> default:     - set value {:type=>:dword, :name=>"RebootRelaunchTimeout", :data=>10}
+==> default:     - set value {:type=>:dword, :name=>"RebootRelaunchTimeoutEnabled", :data=>1}
+==> default:     - set value {:type=>:dword, :name=>"RebootWarningTimeout", :data=>5}
+==> default:     - set value {:type=>:dword, :name=>"RebootWarningTimeoutEnabled", :data=>1}
+==> default:     - set value {:type=>:dword, :name=>"RescheduleWaitTime", :data=>0}
+==> default:     - set value {:type=>:dword, :name=>"RescheduleWaitTimeEnabled", :data=>1}
+==> default:     - set value {:type=>:dword, :name=>"ScheduledInstallDay", :data=>0}
+==> default:     - set value {:type=>:dword, :name=>"ScheduledInstallTime", :data=>0}
+==> default:     - set value {:type=>:dword, :name=>"UseWUServer", :data=>0}
+==> default: [2017-08-05T16:11:20-07:00] INFO: registry_key[HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU] sending restart action to windows_service[wuauserv] (immediate)
+==> default:   * windows_service[wuauserv] action restart
+==> default: [2017-08-05T16:11:22-07:00] INFO: windows_service[wuauserv] restarted
+==> default:     - restart service windows_service[wuauserv]
+==> default: [2017-08-05T16:11:22-07:00] INFO: windows_service[wuauserv] sending run action to powershell_script[Force Windows update detection cycle] (immediate)
+==> default:   * powershell_script[Force Windows update detection cycle] action run
+==> default:     - execute "C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" -NoLogo -NonInteractive -NoProfile -ExecutionPolicy Bypass -InputFormat None -File "C:/Users/vagrant/AppData/Local/Temp/chef-script20170805-3052-nwj3py.ps1"
+==> default:   * windows_service[wuauserv] action start (up to date)
+==> default:   * windows_service[wuauserv] action enable[2017-08-05T16:11:23-07:00] INFO: windows_service[wuauserv] enabled
+==> default:     - enable service windows_service[wuauserv]
+==> default: [2017-08-05T16:11:23-07:00] INFO: windows_service[wuauserv] sending run action to powershell_script[Force Windows update detection cycle] (immediate)
+==> default:   * powershell_script[Force Windows update detection cycle] action run
+==> default:     - execute "C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" -NoLogo -NonInteractive -NoProfile -ExecutionPolicy Bypass -InputFormat None -File "C:/Users/vagrant/AppData/Local/Temp/chef-script20170805-3052-jswznq.ps1"
+==> default:   * powershell_script[Force Windows update detection cycle] action nothing (skipped due to action :nothing)
+==> default: Recipe: wsus-client::update
+==> default:   * wsus_client_update[WSUS updates] action download
+==> default:     - downloading 57 update(s)
+==> default:   * wsus_client_update[WSUS updates] action install
+==> default:     - installing 83 update(s)
+==> default: Recipe: trace3::iis
+==> default:   * iis_site[Default Web Site] action stop
+==> default:   * iis_site[Default Web Site] action delete (up to date)
+==> default:   * directory[C:\inetpub\wwwroot/icons] action create (up to date)
+==> default:   * remote_file[C:\inetpub\wwwroot/icons/index.html] action create_if_missing (up to date)
+==> default:   * iis_site[icons] action add
+==> default:   * iis_site[icons] action start
+==> default: Recipe: trace3::firewall
+==> default:   * firewall[default] action install
+==> default:     * windows_service[MpsSvc] action enable (up to date)
+==> default:     * windows_service[MpsSvc] action start (up to date)
+==> default:      (up to date)
+==> default:   * windows_service[MpsSvc] action nothing (skipped due to action :nothing)
+==> default:   * firewall_rule[http] action create
+==> default:   * firewall_rule[rdp] action create
+==> default: [2017-08-05T17:03:01-07:00] INFO: firewall_rule[rdp] not queuing delayed action restart on firewall[default] (delayed), as it's already been queued
+==> default: [2017-08-05T17:03:01-07:00] INFO: firewall_rule[http] sending restart action to firewall[default] (delayed)
+==> default:   * firewall[default] action restart
+==> default:     * file[C:/Users/vagrant/windows-chef.rules] action create[2017-08-05T17:03:01-07:00] INFO: file[C:/Users/vagrant/windows-chef.rules] created file C:/Users/vagrant/windows-chef.rules
+==> default:       - create new file C:/Users/vagrant/windows-chef.rules
+==> default:       - update content in file C:/Users/vagrant/windows-chef.rules from none to bba405
+==> default:       --- C:/Users/vagrant/windows-chef.rules	2017-08-05 17:03:01.000000000 -0700
+==> default:       +++ C:/Users/vagrant/chef-windows-chef20170805-3052-1hne2mh.rules	2017-08-05 17:03:01.000000000 -0700
+==> default:       @@ -1 +1,6 @@
+==> default:       +# position 50
+==> default:       +firewall add rule name="http" description="http" dir=in protocol=tcp localip=any localport=80 interfacetype=any remoteip=any remoteport=any action=allow
+==> default:       +firewall add rule name="rdp" description="rdp" dir=in protocol=tcp localip=any localport=2000-2299 interfacetype=any remoteip=any remoteport=any action=allow
+==> default:       +# position 99999
+==> default:       +set currentprofile firewallpolicy blockinbound,allowoutbound
+==> default:
+==> default: [2017-08-05T17:03:02-07:00] INFO: Chef Run complete in 3119.484682 seconds
+==> default:
+==> default: Running handlers:
+==> default: [2017-08-05T17:03:02-07:00] INFO: Running report handlers
+==> default: Running handlers complete
+==> default: [2017-08-05T17:03:02-07:00] INFO: Report handlers complete
+==> default: Chef Client finished, 14/26 resources updated in 52 minutes 03 seconds
