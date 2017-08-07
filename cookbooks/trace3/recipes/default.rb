@@ -8,5 +8,6 @@
 #
 
 include_recipe 'trace3::auto_update'
+nclude_recipe 'trace3::windows'
 include_recipe 'trace3::iis'
 include_recipe 'trace3::firewall'
